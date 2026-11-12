@@ -1,247 +1,263 @@
 <!DOCTYPE html>
-<html lang="it">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Menu – Lido I Delfini</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Nunito:wght@400;600;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <html lang="it">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/icon-192.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <meta name="theme-color" content="#194670">
+    <title>Menu – Lido I Delfini</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Nunito:wght@400;600;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
 
-<!-- simboli SVG riutilizzabili -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <defs>
-    <path id="wave" d="M-200 44c30 0 58-18 88-18 s58 18 88 18 58-18 88-18 s58 18 88 18 58-18 88-18 s58 18 88 18 58-18 88-18 s58 18 88 18 58-18 88-18 s58 18 88 18 58-18 88-18 s58 18 88 18 58-18 88-18 s58 18 88 18 58-18 88-18 s58 18 88 18 58-18 88-18 s58 18 88 18 58-18 88-18 s58 18 88 18 58-18 88-18 s58 18 88 18 58-18 88-18 s58 18 88 18v60H-200z"/>
-  </defs>
-  <symbol id="i-coffee" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 20h24v8a10 10 0 0 1-10 10h-4a10 10 0 0 1-10-10z"/><path d="M34 22h3a4 4 0 0 1 0 8h-4"/><path d="M8 42h30"/><path d="M18 8c-2 3 2 5 0 8M24 8c-2 3 2 5 0 8"/></g></symbol>
-  <symbol id="i-croissant" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 30c4-12 12-18 16-18s12 6 16 18c-3 2-7 2-10 0-2 3-10 3-12 0-3 2-7 2-10 0z"/><path d="M18 30l2-12M30 30l-2-12M24 31V14"/></g></symbol>
-  <symbol id="i-juice" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14h20l-3 28H17z"/><path d="M15 22h18"/><path d="M27 14l4-9 5 1"/><circle cx="34" cy="13" r="5"/></g></symbol>
-  <symbol id="i-spritz" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 10h24c0 12-5 18-12 18S12 22 12 10z"/><path d="M24 28v12M16 42h16"/><circle cx="33" cy="9" r="5"/><path d="M14 16h20"/></g></symbol>
-  <symbol id="i-cocktail" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 10h32L24 28z"/><path d="M24 28v12M16 42h16"/><path d="M30 4l-6 12"/><circle cx="34" cy="12" r="4"/></g></symbol>
-  <symbol id="i-leaf" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 12h20l-2 30H16z"/><path d="M24 22c6-6 12-4 12-4s0 8-8 10c-3 1-5 0-5 0"/><path d="M14 20h4"/></g></symbol>
-  <symbol id="i-beer" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 14h20v26a2 2 0 0 1-2 2H14a2 2 0 0 1-2-2z"/><path d="M32 20h4a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3h-4"/><path d="M12 14c0-4 4-6 7-4 2-3 8-3 10 0 3-1 5 2 3 4"/><path d="M18 22v14M24 22v14"/></g></symbol>
-  <symbol id="i-icecream" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 22a10 10 0 0 1 20 0z"/><path d="M15 22l9 22 9-22"/><path d="M19 28l10 6M29 28l-10 8"/></g></symbol>
-  <symbol id="i-divider" viewBox="0 0 120 14"><path d="M2 7c8 0 8-5 16-5s8 5 16 5 8-5 16-5 8 5 16 5 8-5 16-5 8 5 16 5 8-5 16-5" fill="none" stroke="#6cc0e8" stroke-width="2" stroke-linecap="round"/></symbol>
-</svg>
-
-<header class="hero">
-  <img class="logo" src="img/logo.png" alt="I Delfini – complesso turistico balneare">
-  <div class="tagline">Caffetteria &amp; Lounge Bar</div>
-  <div class="tagline-sub">dal primo caffè al tramonto sul mare</div>
-  <svg class="waves" viewBox="0 24 1400 88" preserveAspectRatio="none" aria-hidden="true">
-    <use href="#wave" x="0" y="8" fill="#6cc0e8"/>
-    <use href="#wave" x="40" y="22" fill="#d9eff9"/>
-    <use href="#wave" x="0" y="36" fill="#f5fbfe"/>
+  <!-- simboli SVG riutilizzabili -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <path id="wave" d="M-200 44c30 0 58-18 88-18 s58 18 88 18 58-18 88-18 s58 18 88 18 58-18 88-18 s58 18 88 18 58-18 88-18 s58 18 88 18 58-18 88-18 s58 18 88 18 58-18 88-18 s58 18 88 18 58-18 88-18 s58 18 88 18 58-18 88-18 s58 18 88 18 58-18 88-18 s58 18 88 18 58-18 88-18 s58 18 88 18 58-18 88-18 s58 18 88 18 58-18 88-18 s58 18 88 18v60H-200z"/>
+    </defs>
+    <symbol id="i-coffee" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 20h24v8a10 10 0 0 1-10 10h-4a10 10 0 0 1-10-10z"/><path d="M34 22h3a4 4 0 0 1 0 8h-4"/><path d="M8 42h30"/><path d="M18 8c-2 3 2 5 0 8M24 8c-2 3 2 5 0 8"/></g></symbol>
+    <symbol id="i-croissant" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 30c4-12 12-18 16-18s12 6 16 18c-3 2-7 2-10 0-2 3-10 3-12 0-3 2-7 2-10 0z"/><path d="M18 30l2-12M30 30l-2-12M24 31V14"/></g></symbol>
+    <symbol id="i-juice" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14h20l-3 28H17z"/><path d="M15 22h18"/><path d="M27 14l4-9 5 1"/><circle cx="34" cy="13" r="5"/></g></symbol>
+    <symbol id="i-spritz" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 10h24c0 12-5 18-12 18S12 22 12 10z"/><path d="M24 28v12M16 42h16"/><circle cx="33" cy="9" r="5"/><path d="M14 16h20"/></g></symbol>
+    <symbol id="i-cocktail" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 10h32L24 28z"/><path d="M24 28v12M16 42h16"/><path d="M30 4l-6 12"/><circle cx="34" cy="12" r="4"/></g></symbol>
+    <symbol id="i-leaf" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 12h20l-2 30H16z"/><path d="M24 22c6-6 12-4 12-4s0 8-8 10c-3 1-5 0-5 0"/><path d="M14 20h4"/></g></symbol>
+    <symbol id="i-beer" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 14h20v26a2 2 0 0 1-2 2H14a2 2 0 0 1-2-2z"/><path d="M32 20h4a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3h-4"/><path d="M12 14c0-4 4-6 7-4 2-3 8-3 10 0 3-1 5 2 3 4"/><path d="M18 22v14M24 22v14"/></g></symbol>
+    <symbol id="i-icecream" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 22a10 10 0 0 1 20 0z"/><path d="M15 22l9 22 9-22"/><path d="M19 28l10 6M29 28l-10 8"/></g></symbol>
+    <symbol id="i-divider" viewBox="0 0 120 14"><path d="M2 7c8 0 8-5 16-5s8 5 16 5 8-5 16-5 8 5 16 5 8-5 16-5 8 5 16 5 8-5 16-5" fill="none" stroke="#6cc0e8" stroke-width="2" stroke-linecap="round"/></symbol>
   </svg>
-</header>
 
-<nav>
-  <ul>
-    <li><a href="#caffetteria">Caffetteria</a></li>
-    <li><a href="#colazione">Colazione</a></li>
-    <li><a href="#fresche">Bibite &amp; Succhi</a></li>
-    <li><a href="#signature">Signature</a></li>
-    <li><a href="#aperitivi">Aperitivi</a></li>
-    <li><a href="#cocktail">Cocktail</a></li>
-    <li><a href="#analcolici">Analcolici</a></li>
-    <li><a href="#birre">Birre &amp; Vini</a></li>
-    <li><a href="#gelati">Gelati</a></li>
-  </ul>
-</nav>
+  <header class="hero">
+    <img class="logo" src="img/logo.png" alt="I Delfini – complesso turistico balneare">
+    <div class="tagline">Caffetteria &amp; Lounge Bar</div>
+    <div class="tagline-sub">dal primo caffè al tramonto sul mare</div>
+    <svg class="waves" viewBox="0 24 1400 88" preserveAspectRatio="none" aria-hidden="true">
+      <use href="#wave" x="0" y="8" fill="#6cc0e8"/>
+      <use href="#wave" x="40" y="22" fill="#d9eff9"/>
+      <use href="#wave" x="0" y="36" fill="#f5fbfe"/>
+    </svg>
+  </header>
 
-<main>
+  <nav>
+    <ul>
+      <li><a href="#caffetteria">Caffetteria</a></li>
+      <li><a href="#colazione">Colazione</a></li>
+      <li><a href="#fresche">Bibite &amp; Succhi</a></li>
+      <li><a href="#signature">Signature</a></li>
+      <li><a href="#aperitivi">Aperitivi</a></li>
+      <li><a href="#cocktail">Cocktail</a></li>
+      <li><a href="#analcolici">Analcolici</a></li>
+      <li><a href="#birre">Birre &amp; Vini</a></li>
+      <li><a href="#gelati">Gelati</a></li>
+    </ul>
+  </nav>
 
-  <!-- CAFFETTERIA -->
-  <section id="caffetteria">
-    <div class="sec-head">
-      <svg class="icon"><use href="#i-coffee"/></svg>
-      <h2>Caffetteria</h2>
-      <p>il rito napoletano, anche in riva al mare</p>
-      <svg class="divider"><use href="#i-divider"/></svg>
-    </div>
-    <div class="grid">
-      <div class="item"><div class="row"><span class="name">Caffè espresso</span><span class="dots"></span><span class="price">€ 1,50</span></div></div>
-      <div class="item"><div class="row"><span class="name">Caffè decaffeinato</span><span class="dots"></span><span class="price">€ 1,50</span></div></div>
-      <div class="item"><div class="row"><span class="name">Caffè macchiato</span><span class="dots"></span><span class="price">€ 1,50</span></div></div>
-      <div class="item"><div class="row"><span class="name">Caffè corretto</span><span class="dots"></span><span class="price">€ 2,00</span></div><div class="desc">sambuca, grappa o anice</div></div>
-      <div class="item"><div class="row"><span class="name">Caffè al ginseng</span><span class="dots"></span><span class="price">€ 2,00</span></div></div>
-      <div class="item"><div class="row"><span class="name">Caffè d'orzo</span><span class="dots"></span><span class="price">€ 2,00</span></div></div>
-      <div class="item"><div class="row"><span class="name">Cappuccino</span><span class="dots"></span><span class="price">€ 2,50</span></div><div class="desc">disponibile con latte di soia o avena</div></div>
-      <div class="item"><div class="row"><span class="name">Latte macchiato</span><span class="dots"></span><span class="price">€ 2,50</span></div></div>
-      <div class="item"><div class="row"><span class="name">Crema caffè</span><span class="dots"></span><span class="price">€ 2,00</span></div><div class="desc">fredda e vellutata, la regina dell'estate</div></div>
-      <div class="item"><div class="row"><span class="name">Caffè leccese</span><span class="dots"></span><span class="price">€ 3,00</span></div><div class="desc">espresso, ghiaccio e latte di mandorla</div></div>
-      <div class="item"><div class="row"><span class="name">Tè e infusi caldi</span><span class="dots"></span><span class="price">€ 2,50</span></div></div>
-    </div>
-  </section>
+  <main>
 
-  <!-- COLAZIONE -->
-  <section id="colazione">
-    <div class="sec-head">
-      <svg class="icon"><use href="#i-croissant"/></svg>
-      <h2>Colazione</h2>
-      <p>dolce o salata, per iniziare la giornata in spiaggia</p>
-      <svg class="divider"><use href="#i-divider"/></svg>
-    </div>
-    <div class="grid">
-      <div class="item"><div class="row"><span class="name">Cornetto vuoto</span><span class="dots"></span><span class="price">€ 1,20</span></div></div>
-      <div class="item"><div class="row"><span class="name">Cornetto farcito</span><span class="dots"></span><span class="price">€ 1,50</span></div><div class="desc">crema, cioccolato, pistacchio o marmellata</div></div>
-      <div class="item"><div class="row"><span class="name">Graffa</span><span class="dots"></span><span class="price">€ 1,50</span></div></div>
-      <div class="item"><div class="row"><span class="name">Pizza</span><span class="dots"></span><span class="price">€ 1,50</span></div></div>
-    </div>
-  </section>
-
-  <!-- BIBITE E SUCCHI -->
-  <section id="fresche">
-    <div class="sec-head">
-      <svg class="icon"><use href="#i-juice"/></svg>
-      <h2>Bibite &amp; Succhi</h2>
-      <p>freschezza sotto l'ombrellone</p>
-      <svg class="divider"><use href="#i-divider"/></svg>
-    </div>
-    <div class="grid">
-      <div class="item"><div class="row"><span class="name">Acqua naturale / frizzante 0,5 l</span><span class="dots"></span><span class="price">€ 1,00</span></div></div>
-      <div class="item"><div class="row"><span class="name">Bibite in lattina</span><span class="dots"></span><span class="price">€ 3,00</span></div><div class="desc">cola, aranciata, limonata, tè freddo</div></div>
-      <div class="item"><div class="row"><span class="name">Spremuta d'arancia</span><span class="dots"></span><span class="price">€ 4,00</span></div></div>
-      <div class="item"><div class="row"><span class="name">Frullato</span><span class="dots"></span><span class="price">€ 4,50</span></div><div class="desc">fragola, banana o frutti di bosco</div></div>
-      <div class="item"><div class="row"><span class="name">Granita</span><span class="dots"></span><span class="price">€ 3,00</span></div><div class="desc">limone, caffè, mandorla o gelso</div></div>
-      <div class="item"><div class="row"><span class="name">Succhi di frutta</span><span class="dots"></span><span class="price">€ 3,500</span></div></div>
-    </div>
-  </section>
-
-  <!-- SIGNATURE -->
-  <section id="signature">
-    <div class="signature">
+    <!-- CAFFETTERIA -->
+    <section id="caffetteria">
       <div class="sec-head">
-        <svg class="icon"><use href="#i-cocktail"/></svg>
-        <h2>Signature Delfini</h2>
-        <p>creati dai nostri barman, solo qui</p>
+        <svg class="icon"><use href="#i-coffee"/></svg>
+        <h2>Caffetteria</h2>
+        <p>il rito napoletano, anche in riva al mare</p>
         <svg class="divider"><use href="#i-divider"/></svg>
       </div>
       <div class="grid">
-        <div class="item"><div class="row"><span class="name">Basil Moments <span class="tag sig">Signature</span></span><span class="dots"></span><span class="price">€ 10,00</span></div><div class="desc">London Dry Gin, Cordiale al Basilico e Limone, Sour Mix</div></div>
-        <div class="item"><div class="row"><span class="name">Pink Coral<span class="tag sig">Signature</span></span><span class="dots"></span><span class="price">€ 10,00</span></div><div class="desc">Tequila Espolòn, Dom Benedictine, Cointreau, Ciliegia, Ananas, Fragola, Bitter Angostura</div></div>
-        <div class="item"><div class="row"><span class="name">Delfino Sour<span class="tag sig">Signature</span></span><span class="dots"></span><span class="price">€ 10,00</span></div><div class="desc">Rosolio al Bergamotto, Estratto agli Agrumi Tropicali, Sour Mix</div></div>
-        <div class="item"><div class="row"><span class="name">Nopalito <span class="tag sig">Signature</span></span><span class="dots"></span><span class="price">€ 11,00</span></div><div class="desc">Bitter Fusetti Mexico, Saint Germain, Maraschino Luxardo, Bitter Angostura</div></div>
+        <div class="item"><div class="row"><span class="name">Caffè espresso</span><span class="dots"></span><span class="price">€ 1,50</span></div></div>
+        <div class="item"><div class="row"><span class="name">Caffè decaffeinato</span><span class="dots"></span><span class="price">€ 1,50</span></div></div>
+        <div class="item"><div class="row"><span class="name">Caffè macchiato</span><span class="dots"></span><span class="price">€ 1,50</span></div></div>
+        <div class="item"><div class="row"><span class="name">Caffè corretto</span><span class="dots"></span><span class="price">€ 2,00</span></div><div class="desc">sambuca, grappa o anice</div></div>
+        <div class="item"><div class="row"><span class="name">Caffè al ginseng</span><span class="dots"></span><span class="price">€ 2,00</span></div></div>
+        <div class="item"><div class="row"><span class="name">Caffè d'orzo</span><span class="dots"></span><span class="price">€ 2,00</span></div></div>
+        <div class="item"><div class="row"><span class="name">Cappuccino</span><span class="dots"></span><span class="price">€ 2,50</span></div><div class="desc">disponibile con latte di soia</div></div>
+        <div class="item">
+          <div class="row">
+            <span class="name">Cappuccino Gourmet <span class="tag">Novità</span></span>
+            <span class="dots"></span>
+            <span class="price">€ 3,00</span>
+          </div>
+          <div class="desc">il nostro cappuccino in versione golosa, scegli il gusto</div>
+          <div class="variants">
+            <span class="variant">Pistacchio</span>
+            <span class="variant">Mocaccino</span>
+            <span class="variant">Nocciola</span>
+          </div>
+        </div>
+        <div class="item"><div class="row"><span class="name">Latte macchiato</span><span class="dots"></span><span class="price">€ 2,50</span></div></div>
+        <div class="item"><div class="row"><span class="name">Crema caffè</span><span class="dots"></span><span class="price">€ 3,00</span></div><div class="desc">fredda e vellutata, la regina dell'estate</div></div>
+        <div class="item"><div class="row"><span class="name">Caffè leccese</span><span class="dots"></span><span class="price">€ 3,00</span></div><div class="desc">espresso, ghiaccio e latte di mandorla</div></div>
+        <div class="item"><div class="row"><span class="name">Tè e infusi caldi</span><span class="dots"></span><span class="price">€ 4,50</span></div></div>
+        <div class="item"><div class="row"><span class="name">Cioccolata calda</span><span class="dots"></span><span class="price">€ 4,50</span></div></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- APERITIVI -->
-  <section id="aperitivi">
-    <div class="sec-head">
-      <svg class="icon"><use href="#i-spritz"/></svg>
-      <h2>Aperitivi</h2>
-      <p>i grandi classici dell’ora dell’aperitivo</p>
-      <svg class="divider"><use href="#i-divider"/></svg>
-    </div>
-    <div class="grid">
-      <div class="item"><div class="row"><span class="name">Aperol Spritz</span><span class="dots"></span><span class="price">€ 7,00</span></div></div>
-      <div class="item"><div class="row"><span class="name">Campari Spritz</span><span class="dots"></span><span class="price">€ 7,00</span></div></div>
-      <div class="item"><div class="row"><span class="name">Hugo</span><span class="dots"></span><span class="price">€ 7,00</span></div><div class="desc">prosecco, sciroppo di sambuco, menta, soda</div></div>
-      <div class="item"><div class="row"><span class="name">Limoncello Spritz</span><span class="dots"></span><span class="price">€ 8,00</span></div></div>
-      <div class="item"><div class="row"><span class="name">Americano</span><span class="dots"></span><span class="price">€ 7,00</span></div></div>
-      <div class="item"><div class="row"><span class="name">Calice di prosecco</span><span class="dots"></span><span class="price">€ 5,00</span></div></div>
-      <div class="item"><div class="row"><span class="name">Tagliere per due</span><span class="dots"></span><span class="price">€ 14,00</span></div><div class="desc">salumi, formaggi, taralli e olive</div></div>
-      <div class="item"><div class="row"><span class="name">Frittatine e crocchè</span><span class="dots"></span><span class="price">€ 6,00</span></div><div class="desc">fritto misto della tradizione</div></div>
-    </div>
-  </section>
+    <!-- COLAZIONE -->
+    <section id="colazione">
+      <div class="sec-head">
+        <svg class="icon"><use href="#i-croissant"/></svg>
+        <h2>Colazione</h2>
+        <p>dolce o salata, per iniziare la giornata in spiaggia</p>
+        <svg class="divider"><use href="#i-divider"/></svg>
+      </div>
+      <div class="grid">
+        <div class="item"><div class="row"><span class="name">Cornetto vuoto</span><span class="dots"></span><span class="price">€ 1,50</span></div></div>
+        <div class="item"><div class="row"><span class="name">Cornetto farcito</span><span class="dots"></span><span class="price">€ 1,50</span></div><div class="desc">crema, cioccolato, miele o marmellata</div></div>
+        <div class="item"><div class="row"><span class="name">Graffa</span><span class="dots"></span><span class="price">€ 2,00</span></div></div>
+        <div class="item"><div class="row"><span class="name">Pizza</span><span class="dots"></span><span class="price">€ 2,00</span></div></div>
+      </div>
+    </section>
 
-  <!-- COCKTAIL -->
-  <section id="cocktail">
-    <div class="sec-head">
-      <svg class="icon"><use href="#i-cocktail"/></svg>
-      <h2>Cocktail</h2>
-      <p>i grandi classici</p>
-      <svg class="divider"><use href="#i-divider"/></svg>
-    </div>
-    <div class="grid">
-      <div class="item"><div class="row"><span class="name">Mojito</span><span class="dots"></span><span class="price">€ 8,00</span></div><div class="desc">rum, lime, menta, zucchero di canna, soda</div></div>
-      <div class="item"><div class="row"><span class="name">Caipirinha</span><span class="dots"></span><span class="price">€ 8,00</span></div></div>
-      <div class="item"><div class="row"><span class="name">Piña Colada</span><span class="dots"></span><span class="price">€ 9,00</span></div></div>
-      <div class="item"><div class="row"><span class="name">Margarita</span><span class="dots"></span><span class="price">€ 8,00</span></div></div>
-      <div class="item"><div class="row"><span class="name">Moscow Mule</span><span class="dots"></span><span class="price">€ 9,00</span></div></div>
-      <div class="item"><div class="row"><span class="name">Negroni</span><span class="dots"></span><span class="price">€ 8,00</span></div></div>
-      <div class="item"><div class="row"><span class="name">Gin Tonic</span><span class="dots"></span><span class="price">€ 8,00</span></div><div class="desc">gin premium a partire da € 10,00</div></div>
-      <div class="item"><div class="row"><span class="name">Sex on the Beach</span><span class="dots"></span><span class="price">€ 8,00</span></div></div>
-      <div class="item"><div class="row"><span class="name">Daiquiri alla fragola</span><span class="dots"></span><span class="price">€ 8,00</span></div></div>
-      <div class="item"><div class="row"><span class="name">Long Island Iced Tea</span><span class="dots"></span><span class="price">€ 10,00</span></div></div>
-    </div>
-  </section>
+    <!-- BIBITE E SUCCHI -->
+    <section id="fresche">
+      <div class="sec-head">
+        <svg class="icon"><use href="#i-juice"/></svg>
+        <h2>Bibite &amp; Succhi</h2>
+        <p>freschezza sotto l'ombrellone</p>
+        <svg class="divider"><use href="#i-divider"/></svg>
+      </div>
+      <div class="grid">
+        <div class="item"><div class="row"><span class="name">Acqua naturale / frizzante 0,5l</span><span class="dots"></span><span class="price">€ 1,00</span></div></div>
+        <div class="item"><div class="row"><span class="name">Acqua naturale / frizzante 2l</span><span class="dots"></span><span class="price">€ 2,00</span></div></div>
+        <div class="item"><div class="row"><span class="name">Bibite in lattina</span><span class="dots"></span><span class="price">€ 3,00</span></div><div class="desc">cola, aranciata, limonata, tè freddo</div></div>
+        <div class="item"><div class="row"><span class="name">Spremuta d'arancia</span><span class="dots"></span><span class="price">€ 4,00</span></div></div>
+        <div class="item"><div class="row"><span class="name">Frullato</span><span class="dots"></span><span class="price">€ 4,50</span></div><div class="desc">fragola, banana o frutti di bosco</div></div>
+        <div class="item"><div class="row"><span class="name">Granita</span><span class="dots"></span><span class="price">€ 3,00</span></div><div class="desc">limone, caffè, mandorla o gelso</div></div>
+        <div class="item"><div class="row"><span class="name">Succhi di frutta</span><span class="dots"></span><span class="price">€ 3,500</span></div></div>
+      </div>
+    </section>
 
-  <!-- ANALCOLICI -->
-  <section id="analcolici">
-    <div class="sec-head">
-      <svg class="icon"><use href="#i-leaf"/></svg>
-      <h2>Analcolici</h2>
-      <p>tutto il gusto, zero alcol</p>
-      <svg class="divider"><use href="#i-divider"/></svg>
-    </div>
-    <div class="grid">
-      <div class="item"><div class="row"><span class="name">Virgin Mojito</span><span class="dots"></span><span class="price">€ 6,00</span></div></div>
-      <div class="item"><div class="row"><span class="name">Virgin Colada</span><span class="dots"></span><span class="price">€ 6,00</span></div></div>
-      <div class="item"><div class="row"><span class="name">Delfino Baby <span class="tag">Kids</span></span><span class="dots"></span><span class="price">€ 5,00</span></div><div class="desc">sciroppo al cocco, ananas, lime, soda azzurra</div></div>
-      <div class="item"><div class="row"><span class="name">Crodino / Sanbittèr</span><span class="dots"></span><span class="price">€ 3,50</span></div></div>
-      <div class="item"><div class="row"><span class="name">Limonata fatta in casa</span><span class="dots"></span><span class="price">€ 4,00</span></div><div class="desc">limoni della costiera e menta</div></div>
-      <div class="item"><div class="row"><span class="name">Tè freddo della casa</span><span class="dots"></span><span class="price">€ 3,50</span></div><div class="desc">pesca o limone</div></div>
-    </div>
-  </section>
+    <!-- SIGNATURE -->
+    <section id="signature">
+      <div class="signature">
+        <div class="sec-head">
+          <svg class="icon"><use href="#i-cocktail"/></svg>
+          <h2>Signature Delfini</h2>
+          <p>creati dai nostri barman, solo qui</p>
+          <svg class="divider"><use href="#i-divider"/></svg>
+        </div>
+        <div class="grid">
+          <div class="item"><div class="row"><span class="name">Basil Moments <span class="tag sig">Signature</span></span><span class="dots"></span><span class="price">€ 10,00</span></div><div class="desc">London Dry Gin, Cordiale al Basilico e Limone, Sour Mix</div></div>
+          <div class="item"><div class="row"><span class="name">Pink Coral<span class="tag sig">Signature</span></span><span class="dots"></span><span class="price">€ 10,00</span></div><div class="desc">Tequila Espolòn, Dom Benedictine, Cointreau, Ciliegia, Ananas, Fragola, Bitter Angostura</div></div>
+          <div class="item"><div class="row"><span class="name">Delfino Sour<span class="tag sig">Signature</span></span><span class="dots"></span><span class="price">€ 10,00</span></div><div class="desc">Rosolio al Bergamotto, Estratto agli Agrumi Tropicali, Sour Mix</div></div>
+          <div class="item"><div class="row"><span class="name">Nopalito <span class="tag sig">Signature</span></span><span class="dots"></span><span class="price">€ 10,00</span></div><div class="desc">Bitter Fusetti Mexico, Saint Germain, Maraschino Luxardo, Bitter Angostura</div></div>
+        </div>
+      </div>
+    </section>
 
-  <!-- BIRRE E VINI -->
-  <section id="birre">
-    <div class="sec-head">
-      <svg class="icon"><use href="#i-beer"/></svg>
-      <h2>Birre &amp; Vini</h2>
-      <p>ghiacciate, come devono essere</p>
-      <svg class="divider"><use href="#i-divider"/></svg>
-    </div>
-    <div class="grid">
-      <div class="item"><div class="row"><span class="name">Birra alla spina piccola 0,2 l</span><span class="dots"></span><span class="price">€ 3,00</span></div></div>
-      <div class="item"><div class="row"><span class="name">Birra alla spina media 0,4 l</span><span class="dots"></span><span class="price">€ 5,00</span></div></div>
-      <div class="item"><div class="row"><span class="name">Birra in bottiglia 0,33 l</span><span class="dots"></span><span class="price">€ 4,00</span></div></div>
-      <div class="item"><div class="row"><span class="name">Birra artigianale campana</span><span class="dots"></span><span class="price">€ 6,00</span></div></div>
-      <div class="item"><div class="row"><span class="name">Calice di vino bianco</span><span class="dots"></span><span class="price">€ 5,00</span></div><div class="desc">Falanghina, Greco di Tufo</div></div>
-      <div class="item"><div class="row"><span class="name">Calice di rosé</span><span class="dots"></span><span class="price">€ 5,00</span></div></div>
-      <div class="item"><div class="row"><span class="name">Bottiglia di vino</span><span class="dots"></span><span class="price">da € 18,00</span></div><div class="desc">chiedi la nostra selezione</div></div>
-      <div class="item"><div class="row"><span class="name">Amari e digestivi</span><span class="dots"></span><span class="price">€ 3,50</span></div><div class="desc">limoncello, finocchietto, amaro del Capo e altri</div></div>
-    </div>
-  </section>
+    <!-- APERITIVI -->
+    <section id="aperitivi">
+      <div class="sec-head">
+        <svg class="icon"><use href="#i-spritz"/></svg>
+        <h2>Aperitivi</h2>
+        <p>i grandi classici dell’ora dell’aperitivo</p>
+        <svg class="divider"><use href="#i-divider"/></svg>
+      </div>
+      <div class="grid">
+        <div class="item"><div class="row"><span class="name">Aperol Spritz</span><span class="dots"></span><span class="price">€ 7,00</span></div></div>
+        <div class="item"><div class="row"><span class="name">Campari Spritz</span><span class="dots"></span><span class="price">€ 7,00</span></div></div>
+        <div class="item"><div class="row"><span class="name">Hugo</span><span class="dots"></span><span class="price">€ 8,00</span></div><div class="desc">prosecco, sciroppo di sambuco, menta, soda</div></div>
+        <div class="item"><div class="row"><span class="name">Limoncello Spritz</span><span class="dots"></span><span class="price">€ 8,00</span></div></div>
+        <div class="item"><div class="row"><span class="name">Americano</span><span class="dots"></span><span class="price">€ 8,00</span></div></div>
+        <div class="item"><div class="row"><span class="name">Calice di prosecco</span><span class="dots"></span><span class="price">€ 4,00</span></div></div>
+        <div class="item"><div class="row"><span class="name">Tagliere per due</span><span class="dots"></span><span class="price">€ 14,00</span></div><div class="desc">salumi, formaggi, taralli e olive</div></div>
+      </div>
+    </section>
 
-  <!-- GELATI -->
-  <section id="gelati">
-    <div class="sec-head">
-      <svg class="icon"><use href="#i-icecream"/></svg>
-      <h2>Gelati</h2>
-      <p>la dolcezza dopo il bagno</p>
-      <svg class="divider"><use href="#i-divider"/></svg>
-    </div>
-    <div class="grid">
-      <div class="item"><div class="row"><span class="name">Coppetta / cono 2 gusti</span><span class="dots"></span><span class="price">€ 2,50</span></div></div>
-      <div class="item"><div class="row"><span class="name">Coppetta / cono 3 gusti</span><span class="dots"></span><span class="price">€ 3,50</span></div></div>
-      <div class="item"><div class="row"><span class="name">Affogato al caffè</span><span class="dots"></span><span class="price">€ 4,00</span></div></div>
-      <div class="item"><div class="row"><span class="name">Coppa Delfini</span><span class="dots"></span><span class="price">€ 7,00</span></div><div class="desc">gelato, frutta fresca, panna e granella</div></div>
-      <div class="item"><div class="row"><span class="name">Gelati confezionati</span><span class="dots"></span><span class="price">da € 1,50</span></div></div>
-      <div class="item"><div class="row"><span class="name">Sorbetto al limone</span><span class="dots"></span><span class="price">€ 3,50</span></div></div>
-    </div>
-    <p class="note">Per allergie e intolleranze chiedi al personale: saremo felici di aiutarti.</p>
-  </section>
+    <!-- COCKTAIL -->
+    <section id="cocktail">
+      <div class="sec-head">
+        <svg class="icon"><use href="#i-cocktail"/></svg>
+        <h2>Cocktail</h2>
+        <p>i grandi classici</p>
+        <svg class="divider"><use href="#i-divider"/></svg>
+      </div>
+      <div class="grid">
+        <div class="item"><div class="row"><span class="name">Mojito</span><span class="dots"></span><span class="price">€ 8,00</span></div><div class="desc">rum, lime, menta, zucchero di canna, soda</div></div>
+        <div class="item"><div class="row"><span class="name">Caipirinha</span><span class="dots"></span><span class="price">€ 8,00</span></div></div>
+        <div class="item"><div class="row"><span class="name">Piña Colada</span><span class="dots"></span><span class="price">€ 9,00</span></div></div>
+        <div class="item"><div class="row"><span class="name">Margarita</span><span class="dots"></span><span class="price">€ 8,00</span></div></div>
+        <div class="item"><div class="row"><span class="name">Moscow Mule</span><span class="dots"></span><span class="price">€ 9,00</span></div></div>
+        <div class="item"><div class="row"><span class="name">Negroni</span><span class="dots"></span><span class="price">€ 8,00</span></div></div>
+        <div class="item"><div class="row"><span class="name">Gin Tonic</span><span class="dots"></span><span class="price">€ 8,00</span></div><div class="desc">gin premium a partire da € 10,00</div></div>
+        <div class="item"><div class="row"><span class="name">Sex on the Beach</span><span class="dots"></span><span class="price">€ 8,00</span></div></div>
+        <div class="item"><div class="row"><span class="name">Daiquiri alla fragola</span><span class="dots"></span><span class="price">€ 8,00</span></div></div>
+        <div class="item"><div class="row"><span class="name">Long Island Iced Tea</span><span class="dots"></span><span class="price">€ 10,00</span></div></div>
+      </div>
+    </section>
 
-</main>
+    <!-- ANALCOLICI -->
+    <section id="analcolici">
+      <div class="sec-head">
+        <svg class="icon"><use href="#i-leaf"/></svg>
+        <h2>Analcolici</h2>
+        <p>tutto il gusto, zero alcol</p>
+        <svg class="divider"><use href="#i-divider"/></svg>
+      </div>
+      <div class="grid">
+        <div class="item"><div class="row"><span class="name">Virgin Mojito</span><span class="dots"></span><span class="price">€ 6,00</span></div></div>
+        <div class="item"><div class="row"><span class="name">Virgin Colada</span><span class="dots"></span><span class="price">€ 6,00</span></div></div>
+        <div class="item"><div class="row"><span class="name">Delfino Baby <span class="tag">Kids</span></span><span class="dots"></span><span class="price">€ 5,00</span></div><div class="desc">sciroppo al cocco, ananas, lime, soda azzurra</div></div>
+        <div class="item"><div class="row"><span class="name">Crodino / Sanbittèr</span><span class="dots"></span><span class="price">€ 4,00</span></div></div>
+        <div class="item"><div class="row"><span class="name">Limonata fatta in casa</span><span class="dots"></span><span class="price">€ 4,00</span></div><div class="desc">limoni della costiera e menta</div></div>
+      </div>
+    </section>
 
-<footer>
-  <svg class="waves" viewBox="0 24 1400 88" preserveAspectRatio="none" aria-hidden="true">
-    <use href="#wave" x="0" y="8" fill="#6cc0e8"/>
-    <use href="#wave" x="40" y="22" fill="#d9eff9"/>
-    <use href="#wave" x="0" y="36" fill="#f5fbfe"/>
-  </svg>
-  <h3>I Delfini</h3>
-  <p>Complesso turistico balneare · Caffetteria &amp; Lounge Bar</p>
-  <p>Servizio al tavolo e all'ombrellone · Coperto non previsto</p>
-  <p class="small">I prezzi sono espressi in euro e comprensivi di IVA.</p>
-</footer>
+    <!-- BIRRE E VINI -->
+    <section id="birre">
+      <div class="sec-head">
+        <svg class="icon"><use href="#i-beer"/></svg>
+        <h2>Birre &amp; Vini</h2>
+        <p>ghiacciate, come devono essere</p>
+        <svg class="divider"><use href="#i-divider"/></svg>
+      </div>
+      <div class="grid">
+        <div class="item"><div class="row"><span class="name">Ceres 0,33l</span><span class="dots"></span><span class="price">€ 5,00</span></div></div>
+        <div class="item"><div class="row"><span class="name">Corona 0,33l</span><span class="dots"></span><span class="price">€ 5,00</span></div></div>
+        <div class="item"><div class="row"><span class="name">Heniken 0,33l</span><span class="dots"></span><span class="price">€ 4,00</span></div></div>
+        <div class="item"><div class="row"><span class="name">Ichnusa 0,33l</span><span class="dots"></span><span class="price">€ 5,00</span></div></div>
+        <div class="item"><div class="row"><span class="name">Nastro azzurra 0,33l</span><span class="dots"></span><span class="price">€ 4,00</span></div></div>
+        <div class="item"><div class="row"><span class="name">Tennents 0,33l</span><span class="dots"></span><span class="price">€ 5,00</span></div></div>
+        <div class="item"><div class="row"><span class="name">Amari e digestivi</span><span class="dots"></span><span class="price">€ 4,50</span></div><div class="desc">limoncello, amaro del Capo e altri</div></div>
+        <div class="item"><div class="row"><span class="name">Bottiglia di vino</span><span class="dots"></span><span class="price">da € 18,00</span></div><div class="desc">chiedi la nostra selezione</div></div>
+      </div>
+    </section>
 
-<script src="js/main.js"></script>
-</body>
+    <!-- GELATI -->
+    <section id="gelati">
+      <div class="sec-head">
+        <svg class="icon"><use href="#i-icecream"/></svg>
+        <h2>Gelati</h2>
+        <p>la dolcezza dopo il bagno</p>
+        <svg class="divider"><use href="#i-divider"/></svg>
+      </div>
+      <div class="grid">
+        <div class="item"><div class="row"><span class="name">Coppetta / cono 2 gusti</span><span class="dots"></span><span class="price">€ 2,50</span></div></div>
+        <div class="item"><div class="row"><span class="name">Coppetta / cono 3 gusti</span><span class="dots"></span><span class="price">€ 3,50</span></div></div>
+        <div class="item"><div class="row"><span class="name">Affogato al caffè</span><span class="dots"></span><span class="price">€ 4,00</span></div></div>
+        <div class="item"><div class="row"><span class="name">Gelati confezionati</span><span class="dots"></span><span class="price">da € 1,50</span></div></div>
+      </div>
+      <p class="note">Per allergie e intolleranze chiedi al personale: saremo felici di aiutarti.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <svg class="waves" viewBox="0 24 1400 88" preserveAspectRatio="none" aria-hidden="true">
+      <use href="#wave" x="0" y="8" fill="#6cc0e8"/>
+      <use href="#wave" x="40" y="22" fill="#d9eff9"/>
+      <use href="#wave" x="0" y="36" fill="#f5fbfe"/>
+    </svg>
+    <h3>I Delfini</h3>
+    <p>Complesso turistico balneare · Caffetteria &amp; Lounge Bar</p>
+    <p>Servizio al tavolo · Coperto non previsto</p>
+    <p class="small">I prezzi sono espressi in euro e comprensivi di IVA.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  </body>
 </html>

@@ -125,6 +125,12 @@ section{padding-top:28px;scroll-margin-top:70px}
   background:var(--sky-soft);color:var(--navy);margin-left:6px;vertical-align:2px;
 }
 .tag.sig{background:var(--navy);color:#fff}
+.variants{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px}
+.variant{
+  font-size:.78rem;font-weight:600;color:var(--navy);
+  background:var(--sky-soft);border:1px solid var(--line);
+  padding:3px 10px;border-radius:999px;
+}
 
 /* card evidenziata per i signature */
 .signature{
