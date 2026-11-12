@@ -1,0 +1,168 @@
+:root{
+  --navy:#194670;
+  --navy-deep:#0f2f4f;
+  --sky:#6cc0e8;
+  --sky-soft:#d9eff9;
+  --foam:#f5fbfe;
+  --sand:#f3e9d7;
+  --ink:#173a5c;
+  --muted:#5f7f9c;
+  --line:#cfe3f0;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Nunito',system-ui,sans-serif;
+  color:var(--ink);
+  background:var(--foam);
+  line-height:1.45;
+}
+
+/* ---------- HERO ---------- */
+.hero{
+  position:relative;
+  background:radial-gradient(ellipse at 50% 20%, #23588a 0%, var(--navy) 55%, var(--navy-deep) 100%);
+  color:#fff;
+  text-align:center;
+  padding:42px 16px 120px;
+  overflow:hidden;
+}
+.hero::before{ /* riflessi di luce sull'acqua */
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(circle at 15% 30%, rgba(108,192,232,.18) 0 2px, transparent 3px),
+    radial-gradient(circle at 80% 20%, rgba(255,255,255,.15) 0 2px, transparent 3px),
+    radial-gradient(circle at 65% 60%, rgba(108,192,232,.15) 0 3px, transparent 4px),
+    radial-gradient(circle at 30% 70%, rgba(255,255,255,.12) 0 2px, transparent 3px),
+    radial-gradient(circle at 90% 75%, rgba(255,255,255,.12) 0 2px, transparent 3px);
+  pointer-events:none;
+}
+.logo{
+  width:min(260px,62vw);
+  display:block;margin:0 auto;
+  position:relative;z-index:1;
+}
+.tagline{
+  position:relative;z-index:1;
+  margin-top:6px;
+  font-family:'Josefin Sans',sans-serif;
+  font-weight:300;
+  letter-spacing:.35em;
+  text-transform:uppercase;
+  font-size:.95rem;
+  color:var(--sky);
+}
+.tagline-sub{
+  position:relative;z-index:1;
+  font-family:'Playfair Display',serif;font-style:italic;
+  font-size:1.15rem;margin-top:10px;opacity:.9;
+}
+.waves{
+  position:absolute;left:0;bottom:-1px;width:100%;height:110px;
+}
+.waves use{animation:drift 14s linear infinite}
+.waves use:nth-child(1){animation-duration:18s;opacity:.35}
+.waves use:nth-child(2){animation-duration:12s;opacity:.55;animation-direction:reverse}
+.waves use:nth-child(3){animation-duration:9s}
+@keyframes drift{from{transform:translateX(-90px)}to{transform:translateX(85px)}}
+@media (prefers-reduced-motion:reduce){.waves use{animation:none}}
+
+/* ---------- NAV ---------- */
+nav{
+  position:sticky;top:0;z-index:10;
+  background:rgba(245,251,254,.94);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+nav ul{
+  list-style:none;display:flex;gap:8px;
+  overflow-x:auto;scrollbar-width:none;
+  padding:12px 16px;max-width:980px;margin:0 auto;
+}
+nav ul::-webkit-scrollbar{display:none}
+nav a{
+  display:block;white-space:nowrap;text-decoration:none;
+  font-family:'Josefin Sans',sans-serif;font-weight:600;
+  font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--navy);
+  padding:8px 14px;border-radius:999px;
+  border:1px solid var(--line);background:#fff;
+  transition:.2s;
+}
+nav a:hover,nav a.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+
+/* ---------- MENU ---------- */
+main{max-width:980px;margin:0 auto;padding:24px 16px 40px}
+section{padding-top:28px;scroll-margin-top:70px}
+.sec-head{text-align:center;margin-bottom:22px}
+.sec-head .icon{width:42px;height:42px;margin:0 auto 6px;color:var(--sky)}
+.sec-head h2{
+  font-family:'Josefin Sans',sans-serif;font-weight:400;
+  font-size:1.75rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--navy);
+}
+.sec-head p{
+  font-family:'Playfair Display',serif;font-style:italic;
+  color:var(--muted);margin-top:4px;
+}
+.sec-head .divider{display:block;width:120px;height:14px;margin:10px auto 0}
+
+.grid{display:grid;grid-template-columns:1fr;gap:4px 40px}
+@media(min-width:760px){.grid{grid-template-columns:1fr 1fr}}
+
+.item{padding:12px 4px;border-bottom:1px dashed var(--line)}
+.row{display:flex;align-items:baseline;gap:8px}
+.name{font-weight:700;font-size:1.02rem;color:var(--ink)}
+.dots{flex:1;border-bottom:2px dotted var(--line);transform:translateY(-4px);min-width:16px}
+.price{
+  font-family:'Josefin Sans',sans-serif;font-weight:600;
+  color:var(--navy);font-size:1.05rem;white-space:nowrap;
+}
+.desc{font-size:.88rem;color:var(--muted);margin-top:2px}
+.tag{
+  display:inline-block;font-size:.66rem;font-weight:700;letter-spacing:.08em;
+  text-transform:uppercase;padding:2px 7px;border-radius:999px;
+  background:var(--sky-soft);color:var(--navy);margin-left:6px;vertical-align:2px;
+}
+.tag.sig{background:var(--navy);color:#fff}
+
+/* card evidenziata per i signature */
+.signature{
+  background:linear-gradient(160deg,var(--navy) 0%,var(--navy-deep) 100%);
+  color:#fff;border-radius:22px;padding:28px 20px 18px;margin-top:8px;
+  position:relative;overflow:hidden;
+}
+.signature::after{
+  content:"";position:absolute;right:-40px;bottom:-40px;width:200px;height:200px;
+  border-radius:50%;border:30px solid rgba(108,192,232,.08);
+}
+.signature .sec-head h2{color:#fff}
+.signature .sec-head p{color:var(--sky)}
+.signature .name{color:#fff}
+.signature .desc{color:#b9d6ea}
+.signature .price{color:var(--sky)}
+.signature .item{border-bottom-color:rgba(255,255,255,.12)}
+.signature .dots{border-bottom-color:rgba(255,255,255,.2)}
+
+.note{
+  margin-top:14px;font-size:.85rem;color:var(--muted);text-align:center;
+}
+
+/* ---------- FOOTER ---------- */
+footer{
+  position:relative;background:var(--navy);color:#cfe6f5;
+  text-align:center;padding:90px 16px 34px;margin-top:30px;
+}
+footer .waves{top:-1px;bottom:auto;transform:rotate(180deg)}
+footer h3{
+  font-family:'Josefin Sans',sans-serif;font-weight:300;
+  letter-spacing:.3em;text-transform:uppercase;color:#fff;font-size:1.2rem;
+}
+footer p{font-size:.85rem;margin-top:8px;max-width:560px;margin-inline:auto}
+footer .small{opacity:.7;font-size:.75rem;margin-top:14px}
+
+@media print{
+  nav{display:none}
+  .waves use{animation:none}
+  section{break-inside:avoid}
+}
